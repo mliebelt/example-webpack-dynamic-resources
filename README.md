@@ -20,4 +20,4 @@ I have copied the content completely, because the library that I produce does no
 
 * `inline-resources`: The resources are contained in the library file (compare the size).
 * `file-resources`: Working solution that holds the assets as files in a directory that may be specified at runtime.
-* `file-resources-public-path`: Not working examples that try to use the variable `__webpack_public_path__` instead.
+* `public-path-resources`: Not working examples that tries to use the variable `__webpack_public_path__` instead.
