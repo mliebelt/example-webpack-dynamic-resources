@@ -1,0 +1,7 @@
+/.idea/
+/modules/file-resources/node_modules/
+/modules/inline-resources/node_modules/
+/modules/file-resources/lib/
+/modules/inline-resources/lib/
+/modules/public-path-resources/node_modules/
+/modules/public-path-resources/lib/

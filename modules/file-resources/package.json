@@ -1,0 +1,36 @@
+{
+  "name": "example-webpack-dynamic-resources-file",
+  "version": "1.0.0",
+  "description": "Shows the problem of using a webpacked library where the resources may have different paths (depending on the usage). Uses the plugin webpack-require-from as solution.",
+  "main": "lib/pgnv.js",
+  "files": [],
+  "author": "mliebelt",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.js",
+    "examples": "rm -fr ./examples/*/*.js && rm -fr ./examples/*/*.*g && cp ./lib/pgnv.js ./examples/exam1-root/ && cp ./lib/pgnv.js ./examples/exam2-different-dirs/js/ && cp ./lib/pgnv.js examples/exam3-non-standard-dirs/js/ && cp ./lib/*.*g examples/exam1-root/lib/ && cp lib/*.*g examples/exam2-different-dirs/assets/ && cp ./lib/*.*g examples/exam3-non-standard-dirs/my-assets/",
+    "run1": "cd examples/exam1-root; http-server",
+    "run2": "cd examples/exam2-different-dirs; http-server",
+    "run3": "cd examples/exam3-non-standard-dirs; http-server"
+  },
+  "keywords": [
+    "webpack",
+    "bundle",
+    "publicPath"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "copyfiles": "^2.3.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "postcss-loader": "^d 3.0.0",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-require-from": "^1.8.1"
+  }
+}
