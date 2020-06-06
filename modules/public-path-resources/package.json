@@ -8,7 +8,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "./node_modules/.bin/webpack --config webpack.js",
-    "examples": "rm -fr ./examples/*/*.js && rm -fr ./examples/*/*.*g && cp ./lib/pgnv.js ./examples/exam1-root/ && cp ./lib/pgnv.js ./examples/exam2-different-dirs/js/ && cp ./lib/pgnv.js examples/exam3-non-standard-dirs/js/ && cp ./lib/*.*g examples/exam1-root/lib/ && cp lib/*.*g examples/exam2-different-dirs/assets/ && cp ./lib/*.*g examples/exam3-non-standard-dirs/my-assets/",
+    "examples": "rm -fr ./examples/*/*.js && rm -fr ./examples/*/*.*g && cp ./lib/pgnv.js ./examples/exam1-root/ && cp ./lib/pgnv.js ./examples/exam2-different-dirs/js/ && cp ./lib/pgnv.js examples/exam3-non-standard-dirs/js/ && cp ./lib/*.*g examples/exam1-root/lib/ && cp lib/*.*g examples/exam2-different-dirs/pgnv-assets/ && cp ./lib/*.*g examples/exam3-non-standard-dirs/my-assets/",
     "run1": "cd examples/exam1-root; http-server",
     "run2": "cd examples/exam2-different-dirs; http-server",
     "run3": "cd examples/exam3-non-standard-dirs; http-server"
@@ -18,7 +18,9 @@
     "bundle",
     "publicPath"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "chessground": "^7.6.12"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
