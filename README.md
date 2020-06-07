@@ -1,6 +1,6 @@
 # In a Nutshell
 
-This example library tries to show the problem (and hopefully later the solution) how to create a library with Webpack, that has inlined CSS, that references static resources like images.
+This example library tries to show the problem (and hopefully later the solution) how to create a library with Webpack, that has inlined CSS, that references static resources like images. I raised the question how to do that originally on [Stackoverflow](https://stackoverflow.com/questions/62159936/using-webpack-and-publicpath-for-static-resources) and got the recommendation to provide a repository to show the problem. The original problem came from [PgnViewerJS](https://github.com/mliebelt/PgnViewerJS) which was lately migrated to Webpack.
 
 To show this, there are some example directories available, to show the problem.
 
